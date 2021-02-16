@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="mejjan.css">
+    <!--Aos library-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Average Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Duru Sans' rel='stylesheet'>
+</head>
+
+<body onload="showGreeting()">
+    <div id="loading">
+        <!--<div class="text-load">
+            <h2 data-text="OITIZZO..." class="h2">OITIZZO...</h2>
+        </div>-->
+        <div class="text-animation">
+            <svg viewBox="0 0 1350 600">
+                <text x="50%" y="50%"fill="transparent"text-anchor="middle">OITIZZO BY Iftear</text>
+            </svg>
+        </div>
+    </div>
+    <header>
+        <nav>
+
+            <div class="navbar " id="res-navbar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="#menu-gal" class="nav-link">Menu Gallery</a>
+                <a href="#m-cont-btn" class="nav-link">Menu</a>
+                <a href="about-us.html" class="nav-link">Our Story</a>
+                <a href="about-us.html#team" class="nav-link">Team</a>
+                <a href="about-us.html#contact-form" class="nav-link">Contact</a>
+
+            </div>
+            <div class="nav-sticky" id="sticky-nav">
+                <span class="open-navbtn" id="open-navbar" onclick="openNav()">&#9776;</span>
+                <span>
+                    <img src="IMG_8891.PNG" alt="logo" class="logo-image">
+                </span>
+
+                <span>
+                    <a href="#" class="contact-us-btn" id="contact-us-btn" onclick="openOrder()">Order/Reservation </a>
+                    <p class="contact-nmbr"><b style="color:orange;">Hotline:</b> <i>9238488487</i></p>
+                </span>
+
+
+            </div>
+        </nav>
+
+        <section>
+            <div class="order-menu" id="order-menu">
+                <a href="javascript:void(0)" class="close-order-btn" onclick="closeOrder()">&times;</a>
+
+                <div class="order-menu-content">
+
+                    <div class="order-intro-container">
+                        <span>
+                            <img src="https://images.pexels.com/photos/4551947/pexels-photo-4551947.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                                alt="order-img" class="order-img" width="100%" height="auto">
+                        </span>
+
+                        <div class="order-menu-content-text">
+                            <h1>Order/Reservation</h1>
+                            <p>We look forward to welcoming you to Oitizzo soon. After completing order or reservation, we will sent you a conformation email or messsege with a code. <br>If you are feeling unwell, please
+                                stay at
+                                home and call our reservations team to postpone your booking until another time. Oitizzo
+                                is
+                                taking every possible precaution to ensure the health and safety of our guests, our
+                                staff
+                                and suppliers. For detailed information on our health and safety procedures and
+                                requirements, please visit our Health & Safety page.<br>Please view our reservation and
+                                cancellation policy ahead of your visit to Oitizzo.</p>
+                                
+                        </div>
+                    </div>
+
+                    <div class="order-form-sec">
+                        <div class="order-form">
+                            <form class="order-form">
+                                <h1>Order Now</h1>
+
+                                <hr>
+                                <div class="order-container order-content">
+                                    <h2 class="order-header">Ordered Items</h2>
+                                    <div class="cart-row">
+                                        <span class="cart-item cart-header cart-column">ITEM</span>
+                                        <span class="cart-price cart-header cart-column">PRICE</span>
+                                        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                                    </div>
+                                    <div class="cart-items">
+                                    </div>
+                                    <div class="cart-total">
+                                        <strong class="cart-total-title">Total</strong>
+                                        <span class="cart-total-price">$0</span>
+                                    </div>
+                                </div>
+
+                                <br>
+                                <br>
+                                <div class="order-dp">
+                                    <input type="date" id="booking-date1" class="booking-date" name="date" required>
+                                    <select class="people" required>
+                                        <option value="" class="people-number">Select Time</option>
+                                        <option value="7:30 am" class="people-number">7:30 am</option>
+                                        <option value="8:30 am" class="people-number">8:30 am</option>
+                                        <option value="9:30 am" class="people-number">9:30 am</option>
+                                        <option value="10:30 am" class="people-number">10:30 am</option>
+                                        <option value="11:30 am" class="people-number">11:30 am</option>
+                                        <option value="12:30 pm" class="people-number">12:30 pm</option>
+                                        <option value="1:30 pm" class="people-number">1:30 pm</option>
+                                        <option value="2:30 pm" class="people-number">2:30 pm</option>
+                                        <option value="3:30 pm" class="people-number">3:30 pm</option>
+                                        <option value="4:30 pm" class="people-number">4:30 pm</option>
+                                        <option value="5:30 pm" class="people-number">5:30 pm</option>
+                                        <option value="6:30 pm" class="people-number">6:30 pm</option>
+                                        <option value="7:30 pm" class="people-number">7:30 pm</option>
+                                        <option value="8:30 pm" class="people-number">8:30 pm</option>
+                                        <option value="9:30 pm" class="people-number">9:30 pm</option>
+                                        <option value="10:30 pm" class="people-number">10:30 pm</option>
+                                    </select>
+                                </div>
+                                <textarea id="location-area" class="text-area-location" name="location"
+                                    placeholder="Please,  enter Your details. . . " required></textarea><br>
+                                <span class="warning-location">*Detail requires are your location, phone number or email
+                                    address.</span>
+                                <br>
+                                <input type="submit" class="book-table-btn" value="Next">
+                            </form>
+                            <br>
+
+                        </div>
+
+                        <div class="table-form">
+                            <form class="table-form">
+                                <h1>Find A Table</h1>
+                                <hr>
+
+                                <select class="people" required>
+                                    <option value="" class="people-number">Select</option>
+                                    <option value="1 Person" class="people-number">1 Person</option>
+                                    <option value="2 People" class="people-number">2 People</option>
+                                    <option value="3 People" class="people-number">3 People</option>
+                                    <option value="4 People" class="people-number">4 People</option>
+                                    <option value="5 People" class="people-number">5 People</option>
+                                    <option value="6 People" class="people-number">6 People</option>
+                                    <option value="7 People" class="people-number">7 People</option>
+                                    <option value="8 People" class="people-number">8 People</option>
+                                    <option value="9 People" class="people-number">9 People</option>
+                                    <option value="10 People" class="people-number">10 People</option>
+                                    <option value="11 People" class="people-number">11 People</option>
+                                    <option value="12 People" class="people-number">12 People</option>
+                                </select>
+                                <input type="date" id="booking-date2" class="booking-date" required>
+
+                                <select class="people" required>
+                                    <option value="" class="people-number">Select Time</option>
+                                    <option value="7:30 am" class="people-number">7:30 am</option>
+                                    <option value="8:30 am" class="people-number">8:30 am</option>
+                                    <option value="9:30 am" class="people-number">9:30 am</option>
+                                    <option value="10:30 am" class="people-number">10:30 am</option>
+                                    <option value="11:30 am" class="people-number">11:30 am</option>
+                                    <option value="12:30 pm" class="people-number">12:30 pm</option>
+                                    <option value="1:30 pm" class="people-number">1:30 pm</option>
+                                    <option value="2:30 pm" class="people-number">2:30 pm</option>
+                                    <option value="3:30 pm" class="people-number">3:30 pm</option>
+                                    <option value="4:30 pm" class="people-number">4:30 pm</option>
+                                    <option value="5:30 pm" class="people-number">5:30 pm</option>
+                                    <option value="6:30 pm" class="people-number">6:30 pm</option>
+                                    <option value="7:30 pm" class="people-number">7:30 pm</option>
+                                    <option value="8:30 pm" class="people-number">8:30 pm</option>
+                                    <option value="9:30 pm" class="people-number">9:30 pm</option>
+                                    <option value="10:30 pm" class="people-number">10:30 pm</option>
+                                </select>
+                                <input type="submit" class="book-table-btn" value="Next">
+
+                            </form>
+                            <br>
+                        </div>
+                        <br>
+                        <br>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+    </header>
+    <main>
+        <section>
+            <div class="menu-intro">
+
+                <div class="menu-intro-image">
+                    <img src="FB_IMG_1612793294664.jpg" alt="menu-intro-iamge" width="100%" height="100%">
+                </div>
+                <div class="menu-intro-text-container">
+                    <div class="menu-intro-text">
+                        <h1>Choose your items</h1>
+                        <p>Oitizzo is a progression of rare and beautiful ingredients where texture, flavour and harmony
+                            is paramount. Continually inspired and produced by nature and traditions. For each dish, the
+                            growth of every element and the selection of every ceramic piece is carefully considered and
+                            crafted for its role in the dining experience. Oitizzo brings a personal, interactive
+                            passage for diners culinary evolution.</p>
+                            <a href="#explore-btn"><button class="explore-menu-btn">Explore Menu</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <section>
+            <h1 class='masonary-header'>Menu Gallery</h1>
+            <div class="masonary-container" id="menu-gal">
+
+                <div class="masonary-image">
+                    <h1 class="love-re" id="love-re">Coffee <i class="love fa fa-heart-o"></i><span class="reacted"
+                            style="display:none;"><i class="love fa fa-heart"></i></span></h1>
+                    <img src="https://images.pexels.com/photos/982612/pexels-photo-982612.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="masonary-image1">
+                </div>
+                <div class="masonary-image">
+                    <h1 class="love-re" id="love-re">Creamy Snacks <i class="love fa fa-heart-o"></i><span
+                            class="reacted" style="display:none;"><i class="love fa fa-heart"></i></span></h1>
+                    <img src="https://images.pexels.com/photos/4055104/pexels-photo-4055104.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="masonary-image2">
+                </div>
+                <div class="masonary-image">
+                    <h1 class="love-re" id="love-re">Combo-burger <i class="love fa fa-heart-o"></i><span
+                            class="reacted" style="display:none;"><i class="love fa fa-heart"></i></span></h1>
+                    <img src="https://images.pexels.com/photos/2280573/pexels-photo-2280573.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                        alt="masonary-image3">
+                </div>
+                <div class="masonary-image">
+                    <h1 class="love-re" id="love-re">Fuchka <i class="love fa fa-heart-o"></i><span class="reacted"
+                            style="display:none;"><i class="love fa fa-heart"></i></span></h1>
+                    <img src="https://i.pinimg.com/originals/73/8c/6a/738c6a5732268951acf1193f2dd282db.jpg"
+                        alt="masonary-image4">
+                </div>
+                <div class="masonary-image">
+                    <h1 class="love-re" id="love-re">Shawarma <i class="love fa fa-heart-o"></i><span class="reacted"
+                            style="display:none;"><i class="love fa fa-heart"></i></span></h1>
+                    <img src="https://gfood.com.bd/wp-content/uploads/2020/10/7_Menu_RGB_700x800_Neo_2002001_1.jpg"
+                        alt="masonary-image5">
+                </div>
+                <div class="masonary-image">
+                    <h1 class="love-re" id="love-re">Shawarma <i class="love fa fa-heart-o"></i><span class="reacted"
+                            style="display:none;"><i class="love fa fa-heart"></i></span></h1>
+                    <img src="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="masonary-image6">
+                </div>
+                <div class="masonary-image">
+                    <h1 class="love-re" id="love-re">Beef Paya <i class="love fa fa-heart-o"></i><span class="reacted"
+                            style="display:none;"><i class="love fa fa-heart"></i></span></h1>
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/0d/36/28/67/paya.jpg"
+                        alt="masonary-image7">
+                </div>
+                <div class="masonary-image">
+                    <h1 class="love-re" id="love-re">Biryani <i class="love fa fa-heart-o"></i><span class="reacted"
+                            style="display:none;"><i class="love fa fa-heart"></i></span></h1>
+                    <img src="https://www.utshob.com/wp-content/uploads/2014/05/HB-2542-Dhk.jpg" alt="masonary-image8">
+                </div>
+                <div class="masonary-image">
+                    <h1 class="love-re" id="love-re">Beef Curry <i class="love fa fa-heart-o"></i><span class="reacted"
+                            style="display:none;"><i class="love fa fa-heart"></i></span></h1>
+                    <img src="beef-curry-m - Copy.png" alt="masonary-image9">
+                </div>
+                <div class="masonary-image">
+                    <h1 class="love-re" id="love-re">Sandwich <i class="love fa fa-heart-o"></i><span class="reacted"
+                            style="display:none;"><i class="love fa fa-heart"></i></span></h1>
+                    <img src="https://images.pexels.com/photos/1600711/pexels-photo-1600711.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+                        alt="masonary-image10">
+                </div>
+                <div class="masonary-image">
+                    <h1 class="love-re" id="love-re">Fish Curry <i class="love fa fa-heart-o"></i><span class="reacted"
+                            style="display:none;"><i class="love fa fa-heart"></i></span></h1>
+                    <img src="https://i.pinimg.com/736x/ae/e5/b4/aee5b4da0fe97c42ebe01850005827d5.jpg"
+                        alt="masonary-image11">
+                </div>
+                <div class="masonary-image">
+                    <h1 class="love-re" id="love-re">Kala-buna <i class="love fa fa-heart-o"></i><span class="reacted"
+                            style="display:none;"><i class="love fa fa-heart"></i></span></h1>
+                    <img src="https://punampaul.com/wp-content/uploads/2018/09/Kala-Ghost-Recipe.jpg"
+                        alt="masonary-image12">
+                </div>
+                <div class="masonary-image">
+                    <h1 class="love-re" id="love-re">Grill <i class="love fa fa-heart-o"></i><span class="reacted"
+                            style="display:none;"><i class="love fa fa-heart"></i></span></h1>
+                    <img src="https://images.pexels.com/photos/236887/pexels-photo-236887.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt="masonary-image13">
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+    <br>
+    <br>
+    <main>
+
+        <h1 class="masonary-header"id="explore-btn">Menu Items</h1>
+        <br>
+        <section class="menu-box">
+            <div class="menu-container1">
+                <button class="m-cont-btn" id="m-cont-btn">Breakfast Menu</button>
+                <article class="about-menu" id="about-menu">
+                    <div class="menu-items">
+
+                        <span class="menu-items-name">
+                            <h3 class="item-title">Coffee</h3>
+                            <p>This is light coffee for you. We recomend you to checkout this coffee for your breakfast.
+                            </p>
+                        </span>
+                        <span class='add-price'>
+                            <h4 class='item-price'>1.80$</h4>
+                            <button class="add-cart-btn" id="add-cart-btn"><i class="fa fa-cart-plus"></i></button>
+                        </span>
+                    </div>
+                    <div class="menu-items">
+                        <span class="menu-items-name">
+                            <h3 class="item-title">Tea</h3>
+                            <p>This our special kind of red Tea which made with traditionally and some unique
+                                ingredients.
+                            </p>
+                        </span>
+                        <span class='add-price'>
+                            <h4 class='item-price'>1.60$</h4>
+                            <button class="add-cart-btn" id="add-cart-btn"><i class="fa fa-cart-plus"></i></button>
+                        </span>
+                    </div>
+                    <div class="menu-items">
+                        <span class="menu-items-name">
+                            <h3 class="item-title">Egg Omlet</h3>
+                            <p>Half fried egg omlet. This omlet is fried with cheese and some secret ingredients.
+                            </p>
+                        </span>
+                        <span class='add-price'>
+                            <h4 class='item-price'>1.00$</h4>
+                            <button class="add-cart-btn" id="add-cart-btn"><i class="fa fa-cart-plus"></i></button>
+                        </span>
+                    </div>
+                    <div class="menu-items">
+                        <span class="menu-items-name">
+                            <h3 class="item-title">Sandwich</h3>
+                            <p>Spicy Sandwich with different taste. Best combo of vegetable, beef, kechup and cheese.
+                            </p>
+                        </span>
+                        <span class='add-price'>
+                            <h4 class='item-price'>1.00$</h4>
+                            <button class="add-cart-btn" id="add-cart-btn"><i class="fa fa-cart-plus"></i></button>
+                        </span>
+                    </div>
+                    <div class="menu-items">
+                        <span class="menu-items-name">
+                            <h3 class="item-title">Toast Omelette Sandwich</h3>
+                            <p>Kind of Sandwich which made 4 layer of cheese and butter and combo of bread.
+                            </p>
+                        </span>
+                        <span class='add-price'>
+                            <h4 class='item-price'>1.10$</h4>
+                            <button class="add-cart-btn" id="add-cart-btn"><i class="fa fa-cart-plus"></i></button>
+                        </span>
+                    </div>
+                    <div class="menu-items">
+                        <span class="menu-items-name">
+                            <h3 class="item-title">Drill With Curry</h3>
+                            <p>Soft and big size drill with a kind of spicy beef curry. It's best choice for breakfast.
+                            </p>
+                        </span>
+                        <span class='add-price'>
+                            <h4 class='item-price'>1.50$</h4>
+                            <button class="add-cart-btn" id="add-cart-btn"><i class="fa fa-cart-plus"></i></button>
+                        </span>
+                    </div>
+                </article>
+            </div>
+
+            <div class="menu-container2">
+                <button class="m-cont-btn" id="m-cont-btn">Regular Menu</button>
+                <article class="about-menu" id="about-menu">
+                    <div class="menu-items">
+                        <br>
+                        <span class="menu-items-name">
+                            <h3 class="item-title">Mezbani Meal</h3>
+                            <p>Combo of rice, beef curry and dal. Additional items are paya and kalabuna.
+                            </p>
+                        </span>
+                        <span class='add-price'>
+                            <h4 class='item-price'>3.60$</h4>
+                            <button class="add-cart-btn" id="add-cart-btn"><i class="fa fa-cart-plus"></i></button>
+                        </span>
+                    </div>
+                    <div class="menu-items">
+                        <span class="menu-items-name">
+                            <h3 class="item-title">Biryani</h3>
+                            <p>Special and famous spicy chicken biryani. It's a local traditional biryani.
+                            </p>
+                        </span>
+                        <span class='add-price'>
+                            <h4 class='item-price'>3.20$</h4>
+                            <button class="add-cart-btn" id="add-cart-btn"><i class="fa fa-cart-plus"></i></button>
+                        </span>
+                    </div>
+                    <div class="menu-items">
+                        <span class="menu-items-name">
+                            <h3 class="item-title">Normal Meal</h3>
+                            <p>Combo of rice, beef curry, chicken curry and fish curry. A local meal.
+                            </p>
+                        </span>
+                        <span class='add-price'>
+                            <h4 class='item-price'>2.80$</h4>
+                            <button class="add-cart-btn" id="add-cart-btn"><i class="fa fa-cart-plus"></i></button>
+                        </span>
+                    </div>
+                    <div class="menu-items">
+                        <span class="menu-items-name">
+                            <h3 class="item-title">Fish Curry</h3>
+                            <p>Spicy fish curry with special ingredients. 4 pieces of fish in a plate.
+                            </p>
+                        </span>
+                        <span class='add-price'>
+                            <h4 class='item-price'>2.30$</h4>
+                            <button class="add-cart-btn" id="add-cart-btn"><i class="fa fa-cart-plus"></i></button>
+                        </span>
+                    </div>
+                    <div class="menu-items">
+                        <span class="menu-items-name">
+                            <h3 class="item-title">Beef Curry</h3>
+                            <p>Spicy fish curry with special ingredients. 6 pieces of fish in a plate.
+                            </p>
+                        </span>
+                        <span class='add-price'>
+                            <h4 class='item-price'>2.30$</h4>
+                            <button class="add-cart-btn" id="add-cart-btn"><i class="fa fa-cart-plus"></i></button>
+                        </span>
+                    </div>
+                    <div class="menu-items">
+                        <span class="menu-items-name">
+                            <h3 class="item-title">Chicken Curry</h3>
+                            <p>Spicy fish curry with special ingredients. 3 pieces of fish in a plate.
+                            </p>
+                        </span>
+                        <span class='add-price'>
+                            <h4 class='item-price'>2.20$</h4>
+                            <button class="add-cart-btn" id="add-cart-btn"><i class="fa fa-cart-plus"></i></button>
+                        </span>
+                    </div>
+                </article>
+            </div>
+
+
+            <div class="menu-container3">
+                <button class="m-cont-btn" id="m-cont-btn">Special Menu</button>
+                <article class="about-menu" id="about-menu">
+                    <div class="menu-items">
+                        <br>
+                        <span class="menu-items-name">
+                            <h3 class="item-title">Polao-Biryani</h3>
+                            <p>Special kind of spicy long rice biryani mixed with beef and chicken with salad.
+                            </p>
+                        </span>
+                        <span class='add-price'>
+                            <h4 class='item-price'>3.00$</h4>
+                            <button class="add-cart-btn" id="add-cart-btn"><i class="fa fa-cart-plus"></i></button>
+                        </span>
+                    </div>
+                    <div class="menu-items">
+                        <span class="menu-items-name">
+                            <h3 class="item-title">Kala-buna</h3>
+                            <p>Kind of spicy dark fried juicy beef made with special ingredients. 5 pieces in a plate.
+                            </p>
+                        </span>
+                        <span class='add-price'>
+                            <h4 class='item-price'>2.30$</h4>
+                            <button class="add-cart-btn" id="add-cart-btn"><i class="fa fa-cart-plus"></i></button>
+                        </span>
+                    </div>
+                    <div class="menu-items">
+                        <span class="menu-items-name">
+                            <h3 class="item-title">Beef Curry (Mezbani)</h3>
+                            <p>Special traditional mezbani beef curry made with special ingredients.
+                            </p>
+                        </span>
+                        <span class='add-price'>
+                            <h4 class='item-price'>2.40$</h4>
+                            <button class="add-cart-btn" id="add-cart-btn"><i class="fa fa-cart-plus"></i></button>
+                        </span>
+                    </div>
+                    <div class="menu-items">
+                        <span class="menu-items-name">
+                            <h3 class="item-title">Mezbani Paya</h3>
+                            <p>Mezbani paya with unique and spicy recipe made with special ingredients.
+                            </p>
+                        </span>
+                        <span class='add-price'>
+                            <h4 class='item-price'>1.85$</h4>
+                            <button class="add-cart-btn" id="add-cart-btn"><i class="fa fa-cart-plus"></i></button>
+                        </span>
+                    </div>
+                    <div class="menu-items">
+                        <span class="menu-items-name">
+                            <h3 class="item-title">Bhapa Phita</h3>
+                            <p>This is Seasonal(winter) items. Made with special rice, dry date and enjoyed with date
+                                juice.
+                            </p>
+                        </span>
+                        <span class='add-price'>
+                            <h4 class='item-price'>2.50$</h4>
+                            <button class="add-cart-btn" id="add-cart-btn"><i class="fa fa-cart-plus"></i></button>
+                        </span>
+                    </div>
+                    <div class="menu-items">
+                        <span class="menu-items-name">
+                            <h3 class="item-title">Honey Rice</h3>
+                            <p>This is Seasonal(winter) items. Made with special rice. It's taste like Kheer.
+                            </p>
+                        </span>
+                        <span class='add-price'>
+                            <h4 class='item-price'>2.80$</h4>
+                            <button class="add-cart-btn" id="add-cart-btn"><i class="fa fa-cart-plus"></i></button>
+                        </span>
+                    </div>
+                </article>
+            </div>
+
+            <div class="menu-container4">
+                <button class="m-cont-btn" id="m-cont-btn">Fast Food Menu</button>
+                <article class="about-menu" id="about-menu">
+                    <div class="menu-items">
+                        <br>
+                        <span class="menu-items-name">
+                            <h3 class="item-title">Combo-burger</h3>
+                            <p>This is chicken, beef and double layer cheese combo burgur with french fries.
+                            </p>
+                        </span>
+                        <span class='add-price'>
+                            <h4 class='item-price'>2.80$</h4>
+                            <button class="add-cart-btn" id="add-cart-btn"><i class="fa fa-cart-plus"></i></button>
+                        </span>
+                    </div>
+                    <div class="menu-items">
+                        <span class="menu-items-name">
+                            <h3 class="item-title">creamy Snacks</h3>
+                            <p>This is creamy soft snacks with chocolate. Best combo with coffee or tea.
+                            </p>
+                        </span>
+                        <span class='add-price'>
+                            <h4 class='item-price'>1.80$</h4>
+                            <button class="add-cart-btn" id="add-cart-btn"><i class="fa fa-cart-plus"></i></button>
+                        </span>
+                    </div>
+                    <div class="menu-items">
+                        <span class="menu-items-name">
+                            <h3 class="item-title">French Fries</h3>
+                            <p>This is special french fries. Enjoy it with anything like burger and grill.
+                            </p>
+                        </span>
+                        <span class='add-price'>
+                            <h4 class='item-price'>1.60$</h4>
+                            <button class="add-cart-btn" id="add-cart-btn"><i class="fa fa-cart-plus"></i></button>
+                        </span>
+                    </div>
+                    <div class="menu-items">
+                        <span class="menu-items-name">
+                            <h3 class="item-title">Chicken Shawarma</h3>
+                            <p>Taste like roll. Mixer of vegetable, cheese and chicken.
+                            </p>
+                        </span>
+                        <span class='add-price'>
+                            <h4 class='item-price'>2.30$</h4>
+                            <button class="add-cart-btn" id="add-cart-btn"><i class="fa fa-cart-plus"></i></button>
+                        </span>
+                    </div>
+                    <div class="menu-items">
+                        <span class="menu-items-name">
+                            <h3 class="item-title">Chicken Grill</h3>
+                            <p>Hot spicy chicken grill with drill. Enjoy it with special drill and tomato sauce.
+                            </p>
+                        </span>
+                        <span class='add-price'>
+                            <h4 class='item-price'>3.50$</h4>
+                            <button class="add-cart-btn" id="add-cart-btn"><i class="fa fa-cart-plus"></i></button>
+                        </span>
+                    </div>
+                    <div class="menu-items">
+                        <span class="menu-items-name">
+                            <h3 class="item-title">Fuchka</h3>
+                            <p>Best item for evening time. Combo of potato, chili, egg and tamarind juice.
+                            </p>
+                        </span>
+                        <span class='add-price'>
+                            <h4 class='item-price'>2.20$</h4>
+                            <button class="add-cart-btn" id="add-cart-btn"><i class="fa fa-cart-plus"></i></button>
+                        </span>
+                    </div>
+
+                </article>
+            </div>
+
+        </section>
+
+    </main>
+    <br>
+    <br>
+    <main>
+
+        <section class="finding-us">
+            <br>
+            <h1>Find Us</h1>
+            <br>
+            <article class="contact-details">
+
+                <div class="contact-info">
+                    <span>
+                        <h3>PHONE</h3>
+                        <p>(Call +009) 2384-88487</p>
+                        <p>oitizzo.plate123@gmail.com</p>
+                    </span>
+                </div>
+
+                <div class="opening-hours">
+                    <span>
+                        <h3>OPENING HOURS</h3>
+                        <p><b>M-Th</b> 10a–10p</p>
+                        <p><b>Wed</b> <b style="color: red;">close</b></p>
+                        <p><b>F-Sa</b> 7a–12p</p>
+                        <p><b>Su</b> 9a–11p</p>
+                    </span>
+                </div>
+
+                <div class="visit-us">
+                    <span>
+                        <h3>VISIT US</h3>
+                        <p>74 5th Avenue</p>
+                        <p>at St. Marks Place</p>
+                        <p>CDA, Chittagong</p>
+                    </span>
+                </div>
+            </article>
+            <br>
+        </section>
+
+    </main>
+    <br>
+    <br>
+    <section class="keep-update">
+        <article class="subs-info">
+            <h1>KEEP UP TO DATE WITH OITIZZO</h1>
+            <p>Sign up to be the first to receive special news and event updates from Oitizzo.</p>
+        </article>
+        <div class="input-part">
+            <input type="email" class="email-subs" id="subs-email" placeholder="Email Address*" required>
+            <br>
+            <button type="submit" class="subs-btn">SUBSCRIBE</button>
+        </div>
+    </section>
+    <br>
+    <footer>
+        <div class="social-part">
+
+            <div class="social-part-icon">
+                <h1>SOCIAL</h1>
+                <br>
+                <span class="facebook"><a href="#"><i class="fa fa-facebook"></i></a> </span>
+                <span class="insta"> <a href="#"><i class="fa fa-instagram"></i></a> </span>
+                <span class="twitter"><a href="#"><i class="fa fa-twitter"></i></a> </span>
+                <span class="google-plus"> <a href="#"><i class="fa fa-google-plus"></i></a> </span>
+                <span class="whatsup"><a href="#"><i class="fa fa-whatsapp"></i></a></span>
+            </div>
+            <div>
+                <p class="right-issue"><a href="#" style="color: rgb(248, 44, 112);font-family: 'Sofia';">OITIZZO</a>
+                    RESTAURANT 2021. ALL RIGHTS RESERVED <br><br><span class="right-issue-2">POWERED BY DIGITAL FUEL
+                        MARKETING</span></p>
+                <!--<p class="right-issue-2">POWERED BY DIGITAL FUEL MARKETING</p>-->
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="menu.js"></script>
+</body>
+
+</html>

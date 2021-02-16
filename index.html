@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OITIZZO</title>
+    <link rel="stylesheet" href="mejjan.css">
+    <!--Aos library-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Average Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Duru Sans' rel='stylesheet'>
+</head>
+
+<body onload="showGreeting()">
+    <div id="loading">
+        <!--<div class="text-load">
+            <h2 data-text="OITIZZO..." class="h2">OITIZZO...</h2>
+        </div>-->
+        <div class="text-animation">
+            <svg viewBox="0 0 1350 600">
+                <text x="50%" y="50%"fill="transparent"text-anchor="middle">OITIZZO BY Iftear</text>
+            </svg>
+        </div>
+    </div>
+    <header>
+        <nav>
+
+            <div class="navbar " id="res-navbar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="menu.html#menu-gal" class="nav-link">Menu Gallery</a>
+                <a href="#food-menu" class="nav-link">Menu</a>
+                <!--<div class="menu-list">
+                    <button class="menu-dropdown">Menu <i class="fa fa-chevron-down"></i></button>
+                    <div class="menu-list-content">
+                        <a href="menu.html#breakfast" class="menu-link">Breakfast</a>
+                        <a href="menu.html#drinks" class="menu-link">Special</a>
+                        <a href="menu.html#launch-part-menu" class="menu-link">Mezbani</a>
+                        <a href="menu.html#special" class="menu-link">Fast food</a>
+                        <a href="menu.html#dinner" class="menu-link">Beverage</a>
+                    </div>
+                </div>-->
+                <a href="about-us.html" class="nav-link">Our Story</a>
+                <a href="about-us.html#team" class="nav-link">Team</a>
+                <a href="about-us.html#contact-form" class="nav-link">Contact</a>
+
+            </div>
+            <div class="nav-sticky" id="sticky-nav">
+                <span class="open-navbtn" id="open-navbar" onclick="openNav()">&#9776;</span>
+                <span>
+                    <img src="IMG_8891.PNG" alt="logo" class="logo-image">
+                </span>
+                <span>
+                    <a href="menu.html" class="contact-us-btn" id="contact-us-btn">Order/Reservation <i
+                            class="fa fa-chevron-right" id="che-right"></i><i class='fa fa-arrow-right'
+                            id="arrow-right"></i></a>
+                    <p class="contact-nmbr"><b style="color:orange;">Hotline:</b> <i>9238488487</i></p>
+                </span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main" id="main">
+
+        <section>
+            <div class="banner">
+                <video autoplay muted loop>
+                    <source src="grilled.mp4" type="video/mp4">
+                </video>
+
+                <div class="video-text">
+                    <div class="video-text-content">
+                        <h1>The plates of <span style="color: rgb(255, 208, 0);">tradition</span></h1>
+                        <p>Welcome to Oitizzo. Here, we serve you the most traditional healthy and fresh meal. The
+                            restaurant is an organic space reflective of Chittagonian tradition and nature inspired
+                            cuisine. The interplay of textures and colour brings life and a vibrance that embraces the
+                            restaurant’s place in the dress circle of Chittagong Harbour. </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <br>
+        <br>
+        <section class="short-des">
+            <article class="short-description">
+                <span class="short-description-text">
+                    <h1>Hello There <span class="handing-right"><i class="fa fa-hand-paper-o" id="handing"></i></span>
+                    </h1>
+                    <p>With a good day's regerts we welcome you to oitizzo, Your most reliable e-dinner here to serve!
+                        We are here to offer you a healthy and fresh meal we can provide. we have categorized the food
+                        section with a more easiar and tidy look for over all better experince. Take a quick look at our
+                        food menu below.</p>
+
+                </span>
+
+            </article>
+        </section>
+
+        <p style="text-align: center;" class="down-ani"><i class="fa fa-arrow-down" id="down-signal"></i></p>
+
+        <br>
+        <section>
+            <div class="food-menu" id="food-menu">
+                <button class="food-menu-dropdown">Oitizzo Food Menu <i class="fa fa-chevron-down"
+                        id="food-che-down"></i><i class="fa fa-chevron-up" id="food-che-up"></i></button>
+                <div class="food-menu-content" id="food-menu-c">
+                    <span class="food-menu-content-box">
+                        <a href="menu.html#m-cont-btn" class="food-menu-link">Breakfast </a>
+                        <a href="menu.html#m-cont-btn" class="food-menu-link">Fast food </a>
+                    </span>
+                    <span class="food-menu-content-box">
+                        <a href="menu.html#m-cont-btn" class="food-menu-link">Regular </a>
+                        <a href="menu.html#m-cont-btn" class="food-menu-link">Special </a>
+                    </span>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section>
+            <h2 style="text-align: center;color: rgba(0, 0, 0, 0.671);">Recent Interactions</h2>
+            <br>
+            <article>
+                <div class="breakfast">
+                    <span data-aos="fade-up">
+                        <img src="https://w7.pngwing.com/pngs/923/929/png-transparent-grilled-chicken-legs-barbecue-chicken-barbecue-grill-buldak-roast-chicken-grill-barbecue-food-animals.png"
+                            alt="our-menu-img" class="breakfast-image" width="100%" height="auto">
+                    </span>
+                    <span class="breakfast-text" data-aos="fade-down">
+                        <h2>Barbecue Grill Chicken</h2>
+                        <hr>
+                        <br>
+                        <p>Make your evening an entertaining with your family and friends alike fueled by our
+                            raw/mediumraw/cooked well roasted chicken grill.</p><br>
+                        <Span class="ob-bt-group"><a href="menu.html"><button class="view-order-btn"> Order
+                                    Now</button></a> <a href="menu.html"><button class="view-order-btn1">View Regular
+                                    Meals</button></a></Span>
+                    </span>
+                </div>
+            </article>
+        </section>
+        <section>
+            <article>
+                <div class="mejjan-event">
+                    <span data-aos="fade-down">
+                        <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1000&q=80"
+                            alt="our-menu-img" class="mejjan-event-image" width="100%" height="auto">
+                    </span>
+                    <span class="mejjan-event-text" data-aos="fade-up">
+                        <h2>Burger (Halal)</h2>
+                        <hr>
+                        <br>
+                        <p>Healthy fast-food meals to keep the doctor far far away to keep you in check now more
+                            delicious then ever and i bet you will never regret.</p><br>
+                        <Span class="ob-bt-group"><a href="menu.html"><button class="view-order-btn"> Order
+                                    Now</button></a> <a href="menu.html"><button class="view-order-btn1">View Fast
+                                    Food</button></a></Span>
+                    </span>
+                </div>
+            </article>
+        </section>
+        <section>
+            <article>
+                <div class="biryani">
+                    <span data-aos="fade-up">
+                        <img src="mezbani-meals-m.jpg" alt="our-menu-img" class="biryani-image" width="100%"
+                            height="auto">
+                    </span>
+                    <span class="biryani-text" data-aos="fade-down">
+                        <h2>Authentic Mezbani Meals</h2>
+                        <hr>
+                        <br>
+                        <p>You won't find anyone who refuse a good old fashioned Mezban and our authentic taste of a
+                            Mezban is here and you would find unique plates of meals.</p><br>
+                        <Span class="ob-bt-group"><a href="menu.html"><button class="view-order-btn"> Order
+                                    Now</button></a> <a href="menu.html"><button class="view-order-btn1">View Mezbani
+                                    Meals</button></a></Span>
+                    </span>
+                </div>
+            </article>
+        </section>
+
+    </main>
+    <br>
+    <br>
+
+    <main>
+        <section>
+            <article class="order-learn">
+                <button class="how-to-order" id='how-to-order'>How to order food and reserve an event <i
+                        class="fa fa-chevron-down" id="order-che-down"></i><i class="fa fa-chevron-up"
+                        id="order-che-up"></i></button>
+                <div class="order-learn-text" id="order-learn-text">
+                    <p>We look forward to welcoming you to Oitizzo soon. There are few easy steps to orders or
+                        reservations at Oitizzo. Follow the steps one by one, then you will successfully make an order
+                        or reservation. <b><i>Here we go</i></b>...</p>
+                    <ol>
+                        <li>Take a look of whole page and find out Order/reservation button.Then Click it. It will take
+                            you to our menu page.</li><br>
+                        <li>At menu page you will find our food items which are available on times. At every food item
+                            you will find cart button. Then find out a Order/reservation button which is located at the
+                            corner of navigation bar or top right corner. Click the Order/reservation button.</li><br>
+                        <li>After clicking Order/reservation button the page open up an order form. The form have 2
+                            section one for order section another for reservation section.<br> If you selected your
+                            items from menu items section then you will see those items in order form section with total
+                            amount. You also see 3 more input field. Filled out those input fields correctly. Then click
+                            next button.<br>If you are interested in booking table then scroll down, you will find a
+                            Reservation section. There were 3 more input field. Filled out those input fields correctly.
+                            Then click next button.<br>After clicking next button you will see a checkout form.</li><br>
+                        <li>Filled out all the checkout form field correctly and click submit button. You will receive a
+                            confirmation email once your order or reservation has been successful. If you do not receive
+                            this confirmation email, there may have been an error in your order or reservation. </li>
+                        <br>
+                        <p><b><i>Note</i></b> : Please view our reservation and cancellation policy ahead of your visit
+                            to Oitizzo.</p>
+                    </ol>
+
+                </div>
+            </article>
+
+        </section>
+        <br>
+        <section>
+            <article class="our-journey">
+                <button class="journey-btn" id='journey-btn'>Learn more about Oitizzo <i class="fa fa-chevron-down"
+                        id="journey-che-down"></i><i class="fa fa-chevron-up" id="journey-che-up"></i></button>
+                <div class="journey-text" id="journey-text">
+                    <h1>Start of our journey</h1>
+                    <p>These stories are enriched in joy, loss, struggle, resilience and 20 years of outstanding
+                        hospitality making our establishment historic while creating new beginnings. Our concept was
+                        simple: to revive and bring this ancient tradition cuisine to a public who hadn’t properly
+                        experienced it.</p>
+                    <h1>How do we prepare meal</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit distinctio laudantium reiciendis
+                        temporibus nesciunt excepturi voluptates praesentium harum exercitationem molestias perferendis,
+                        dolorem beatae nihil dicta aut deleniti. Autem, unde dolorum.</p>
+                    <a href='about-us.html' class="learn-more-link">Learn more about us ...</a>
+                </div>
+            </article>
+        </section>
+        <br>
+        <section>
+            <article class="greeting" id="greeting">
+
+                <div class="greeting-content">
+                    <div class="greeting-image-content">
+                        <div class="greeting-form-content">
+                            <span class="greeting-closebtn" onclick="greetingClose()" title="Close Greeting">×</span>
+                            <h2>SUBSCRIBE:</h2>
+                            <form action="#" class="greeting-form">
+                                <input type="email" name="email" class="greeting-email" id="email" placeholder="E-mail*"
+                                    required>
+                                <input type="submit" value="Send" class="greeting-submit">
+                            </form>
+                            <br>
+                            <h2>Welcome to OITIZZO</h2>
+                            <p>In order to deliver a better experience for takeout and delivery we have made
+                                the decision to switch our delivery platform from Chownow to Toast.<br>
+
+                                Toast will not only allow us to better serve you but it also gives you opportunity to
+                                see the dishes that you are ordering.
+                                We apologize for any inconvenience in advance and we are looking forward to continue
+                                serving you great food and gracious hospitality.</p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <br>
+    </main>
+    <br>
+    <main id="main2">
+
+        <section class="finding-us">
+            <h1>Find Us</h1>
+            <article class="contact-details">
+
+                <div class="contact-info">
+                    <span>
+                        <h3>PHONE</h3>
+                        <p>(Call +009) 2384-88487</p>
+                        <p>oitizzo.plate123@gmail.com</p>
+                    </span>
+                </div>
+
+                <div class="opening-hours">
+                    <span>
+                        <h3>OPENING HOURS</h3>
+                        <p><b>M-Th</b> 10a–10p</p>
+                        <p><b>Wed</b> <b style="color: red;">close</b></p>
+                        <p><b>F-Sa</b> 7a–12p</p>
+                        <p><b>Su</b> 9a–11p</p>
+                    </span>
+                </div>
+
+                <div class="visit-us">
+                    <span>
+                        <h3>VISIT US</h3>
+                        <p>74 5th Avenue</p>
+                        <p>at St. Marks Place</p>
+                        <p>CDA, Chittagong</p>
+                    </span>
+                </div>
+            </article>
+            <br>
+        </section>
+
+
+    </main>
+    <br>
+    <main id="main3">
+        <section class="keep-update">
+            <article class="subs-info">
+                <h1>KEEP UP TO DATE WITH OITIZZO</h1>
+                <p>Sign up to be the first to receive special news and event updates from oitizzo.</p>
+            </article>
+            <div class="input-part">
+                <form>
+                    <input type="email" class="email-subs" id="subs-email" placeholder="Email Address*" required>
+                    <br>
+                    <button type="submit" class="subs-btn">SUBSCRIBE</button>
+                </form>
+            </div>
+        </section>
+        <br>
+        <br>
+    </main>
+
+    <footer id="footer">
+        <div class="social-part">
+
+            <div class="social-part-icon">
+                <h1>SOCIAL</h1>
+                <br>
+                <span class="facebook"><a href="#"><i class="fa fa-facebook"></i></a> </span>
+                <span class="insta"> <a href="#"><i class="fa fa-instagram"></i></a> </span>
+                <span class="twitter"><a href="#"><i class="fa fa-twitter"></i></a> </span>
+                <span class="google-plus"> <a href="#"><i class="fa fa-google-plus"></i></a> </span>
+                <span class="whatsup"><a href="#"><i class="fa fa-whatsapp"></i></a></span>
+            </div>
+            <div>
+                <p class="right-issue"><a href="#" style="color: rgb(248, 44, 112);font-family: 'Sofia';">OITIZZO</a>
+                    RESTAURANT 2021. ALL RIGHTS RESERVED <br><br><span class="right-issue-2">POWERED BY DIGITAL FUEL
+                        MARKETING</span></p>
+
+            </div>
+        </div>
+
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="mejjan.js"></script>
+</body>
+
+</html>
